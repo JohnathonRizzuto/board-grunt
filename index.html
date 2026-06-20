@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO ============ -->
+<title>Board Grunt LLC — Handmade Hardwood Cutting &amp; Charcuterie Boards | Chicago, IL</title>
+<meta name="description" content="Veteran-owned Board Grunt LLC hand-crafts cutting boards and charcuterie boards from locally sourced domestic and exotic hardwoods. No stains, no dyes — natural, food-grade, built to last. Order direct in Chicago, IL.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://boardgrunt.com/">
+<meta name="geo.region" content="US-IL">
+<meta name="geo.placename" content="Chicago, Illinois">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Board Grunt LLC">
+<meta property="og:title" content="Board Grunt LLC — Handmade Hardwood Cutting &amp; Charcuterie Boards">
+<meta property="og:description" content="Veteran-made cutting &amp; charcuterie boards from locally sourced hardwoods. No stains, no dyes. Built to last a lifetime.">
+<meta property="og:url" content="https://boardgrunt.com/">
+<meta property="og:image" content="https://boardgrunt.com/images/hero.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Board Grunt LLC — Handmade Hardwood Boards">
+<meta name="twitter:description" content="Veteran-made cutting &amp; charcuterie boards from locally sourced hardwoods.">
+<meta name="twitter:image" content="https://boardgrunt.com/images/hero.jpg">
+
+<link rel="icon" type="image/png" href="images/logo.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,500;1,600&family=Pinyon+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============ JSON-LD ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Board Grunt LLC",
+  "alternateName": "Board Grunt",
+  "description": "Veteran-owned maker of handmade cutting boards and charcuterie boards crafted from locally sourced domestic and exotic hardwoods. No stains or dyes — natural, food-grade, built to last.",
+  "image": "https://boardgrunt.com/images/hero.jpg",
+  "url": "https://boardgrunt.com/",
+  "email": "orders@boardgrunt.com",
+  "priceRange": "$$",
+  "founder": { "@type": "Person", "name": "Lance Swalve" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chicago",
+    "addressRegion": "IL",
+    "addressCountry": "US"
+  },
+  "areaServed": { "@type": "State", "name": "Illinois" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Handmade Hardwood Cutting Boards" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Charcuterie &amp; Serving Boards" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "End-Grain Hardwood Boards" } }
+  ],
+  "sameAs": [ "https://www.facebook.com/profile.php?id=61573572876317" ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Board Grunt LLC",
+  "url": "https://boardgrunt.com/"
+}
+</script>
+
+<style>
+:root{
+  --parchment:#f4eee2;
+  --parchment-2:#ece2d2;
+  --walnut:#241a12;        /* deep dark wood */
+  --walnut-2:#322316;
+  --walnut-soft:#3c2c1c;
+  --ink:#2a2018;
+  --brass:#b1782e;         /* warm accent */
+  --brass-deep:#946224;
+  --oxblood:#7c2c20;       /* army/heritage red */
+  --olive:#5b5a3c;         /* military green */
+  --cream-line:#d8cab2;
+  --muted:#7a6a55;
+  --shadow:0 22px 50px -24px rgba(40,26,12,.55);
+  --serif:"PT Serif",Georgia,serif;
+  --display:"Playfair Display",Georgia,serif;
+  --script:"Pinyon Script",cursive;
+  --condensed:"Oswald",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--serif);
+  color:var(--ink);
+  background:var(--parchment);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* ---- type ---- */
+.eyebrow{
+  font-family:var(--script);
+  font-size:2.1rem;
+  color:var(--brass);
+  line-height:1;
+}
+h2.display{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:clamp(2.1rem,4.6vw,3.6rem);
+  line-height:1.04;
+  letter-spacing:.5px;
+  color:var(--ink);
+  text-transform:uppercase;
+}
+.lead{font-size:1.08rem;color:#4a3a2a;max-width:46ch}
+.tag{font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;font-family:var(--condensed);color:var(--brass-deep);font-weight:600}
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-block;font-family:var(--condensed);font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;font-size:.8rem;
+  padding:15px 30px;border:1.5px solid var(--ink);color:var(--ink);
+  background:transparent;transition:.3s;cursor:pointer;
+}
+.btn:hover{background:var(--ink);color:var(--parchment)}
+.btn-solid{background:var(--brass);border-color:var(--brass);color:#fff}
+.btn-solid:hover{background:var(--brass-deep);border-color:var(--brass-deep);color:#fff}
+.btn-light{border-color:var(--parchment);color:var(--parchment)}
+.btn-light:hover{background:var(--parchment);color:var(--ink)}
+
+/* ---- framed photo (corner brackets) ---- */
+.framed{position:relative;background:linear-gradient(135deg,#3a2a1c,#241a12);box-shadow:var(--shadow)}
+.framed img{width:100%;height:100%;object-fit:cover;filter:saturate(1.03) contrast(1.03)}
+.framed::before,.framed::after{
+  content:"";position:absolute;width:26px;height:26px;border:2px solid var(--brass);z-index:3;pointer-events:none;
+}
+.framed::before{top:12px;left:12px;border-right:0;border-bottom:0}
+.framed::after{bottom:12px;right:12px;border-left:0;border-top:0}
+.bracket-tr,.bracket-bl{content:"";position:absolute;width:26px;height:26px;border:2px solid var(--brass);z-index:3;pointer-events:none}
+.bracket-tr{top:12px;right:12px;border-left:0;border-bottom:0}
+.bracket-bl{bottom:12px;left:12px;border-right:0;border-top:0}
+
+/* ============ HEADER ============ */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:50;transition:.4s;
+  border-bottom:1px solid transparent;
+}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;background:#2a1d12}
+.brand .name{font-family:var(--display);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:1.05rem;color:#fff;transition:.4s}
+nav.links{display:flex;gap:30px}
+nav.links a{font-family:var(--condensed);font-weight:500;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;color:#f4eee2;opacity:.9;transition:.25s;position:relative}
+nav.links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--brass);transition:.3s}
+nav.links a:hover{opacity:1}
+nav.links a:hover::after{width:100%}
+header.solid{background:var(--walnut);box-shadow:0 10px 30px -16px rgba(0,0,0,.6);border-bottom-color:rgba(177,120,46,.35)}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+.cta-mini{font-family:var(--condensed);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:10px 18px;border:1.5px solid var(--brass);color:#fff;background:rgba(177,120,46,.18);transition:.3s}
+.cta-mini:hover{background:var(--brass);color:#fff}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:linear-gradient(135deg,#2c1f14,#150e08)}
+.hero .bg img{width:100%;height:100%;object-fit:cover}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.62) 0%,rgba(20,12,6,.42) 40%,rgba(20,12,6,.72) 100%)}
+.hero .inner{position:relative;z-index:2;padding:120px 22px 80px;max-width:900px}
+.hero .logobox{width:96px;height:96px;margin:0 auto 26px;border:2px solid rgba(244,238,226,.65);padding:8px;background:rgba(20,12,6,.3)}
+.hero .logobox img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.hero .script{font-family:var(--script);font-size:clamp(2.4rem,6vw,4rem);color:#eed9b6;line-height:.9;margin-bottom:2px;text-shadow:0 3px 18px rgba(0,0,0,.5)}
+.hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.8rem,9vw,6.4rem);line-height:.92;letter-spacing:2px;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.hero .htag{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.05rem,2.4vw,1.5rem);color:#f0e6d4;margin-top:14px;opacity:.95}
+.hero .rule{width:70px;height:2px;background:var(--brass);margin:26px auto}
+.hero .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:#f4eee2;font-family:var(--condensed);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;opacity:.8}
+.scroll-cue span{display:block;font-size:1.2rem;animation:bob 1.8s infinite;margin-top:4px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+
+/* ============ SECTION SHELL ============ */
+section{position:relative}
+.pad{padding:96px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split .photo{height:430px}
+.reveal{opacity:0;transform:translateY(34px);transition:.9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---- veteran band ---- */
+.vet{background:var(--walnut);color:#f1e6d4;position:relative;overflow:hidden}
+.vet::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 12% 20%,rgba(177,120,46,.16),transparent 40%),
+  radial-gradient(circle at 88% 80%,rgba(124,44,32,.18),transparent 45%)}
+.vet .wrap{position:relative;z-index:2}
+.vet .grid{display:grid;grid-template-columns:130px 1fr;gap:40px;align-items:center}
+.seal{width:130px;height:130px;border-radius:50%;border:2px solid var(--brass);display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--condensed);text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;color:#eed9b6;background:radial-gradient(circle,#3a2a1c,#241a12);line-height:1.5}
+.seal b{display:block;font-family:var(--display);font-size:1.7rem;color:#fff;letter-spacing:1px}
+.vet h2.display{color:#fff}
+.vet .lead{color:#e3d4bd}
+
+/* ---- feature card over photo ---- */
+.feature{position:relative;height:520px;display:flex;align-items:center;justify-content:flex-end}
+.feature .bg{position:absolute;inset:0;background:#241a12}
+.feature .bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.8)}
+.feature .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,6,.2),rgba(20,12,6,.55))}
+.fcard{position:relative;z-index:2;background:rgba(28,19,11,.92);color:#f1e6d4;max-width:440px;margin-right:6%;padding:46px 44px;box-shadow:var(--shadow);border:1px solid rgba(177,120,46,.4)}
+.fcard h3{font-family:var(--display);font-weight:700;font-size:1.7rem;line-height:1.15;margin-bottom:14px;color:#fff}
+.fcard p{color:#ddcbb1;font-size:1rem;margin-bottom:22px}
+
+/* ---- categories over wood ---- */
+.cats{position:relative;color:#fff;text-align:center;overflow:hidden}
+.cats .bg{position:absolute;inset:0;background:#1c130b}
+.cats .bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.42) saturate(1.05)}
+.cats .bg::after{content:"";position:absolute;inset:0;background:rgba(18,11,6,.45)}
+.cats .wrap{position:relative;z-index:2;padding:90px 26px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:54px}
+.cardp{position:relative;height:280px;overflow:hidden;border:1px solid rgba(177,120,46,.45);box-shadow:var(--shadow)}
+.cardp img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.cardp:hover img{transform:scale(1.07)}
+.cardp .lbl{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:24px;background:linear-gradient(180deg,transparent 35%,rgba(15,9,5,.86));font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:1.15rem}
+.cats .overhead .script{font-family:var(--script);font-size:clamp(2.2rem,5vw,3.4rem);color:#eed9b6;line-height:.8}
+.cats .overhead h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2rem,5.5vw,3.6rem);letter-spacing:2px}
+.cats .overhead p{color:#e3d4bd;margin-top:12px}
+
+/* ---- care strip ---- */
+.care{background:var(--parchment-2)}
+.care .split .photo{height:380px}
+.carelist{list-style:none;margin-top:18px}
+.carelist li{position:relative;padding:8px 0 8px 34px;border-bottom:1px dashed var(--cream-line);font-size:1.01rem}
+.carelist li:last-child{border-bottom:0}
+.carelist li::before{content:"✦";position:absolute;left:4px;top:8px;color:var(--brass);font-size:.9rem}
+
+/* ---- uses ---- */
+.uses{background:var(--parchment)}
+.uses .head{text-align:center;max-width:660px;margin:0 auto 52px}
+.ugrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.use{background:#fbf7ef;border:1px solid var(--cream-line);padding:34px 28px;box-shadow:0 16px 34px -26px rgba(40,26,12,.45);transition:.3s}
+.use:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--brass)}
+.use svg{width:40px;height:40px;color:var(--brass);margin-bottom:14px;stroke-width:1.5;fill:none;stroke:currentColor}
+.use h4{font-family:var(--display);font-weight:700;font-size:1.24rem;margin-bottom:8px;color:var(--ink)}
+.use p{font-size:.99rem;color:#5a4a38;line-height:1.62}
+@media(max-width:880px){.ugrid{grid-template-columns:1fr}}
+
+/* ---- order band ---- */
+.order{position:relative;color:#fff;text-align:center;overflow:hidden}
+.order .bg{position:absolute;inset:0;background:#241a12}
+.order .bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
+.order .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,6,.55),rgba(20,12,6,.78))}
+.order .wrap{position:relative;z-index:2;padding:104px 26px}
+.order h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:1.5px}
+.order .em{font-family:var(--display);font-style:italic;font-weight:600;color:#eed9b6;font-size:1.35rem;margin:6px 0 26px}
+.order .btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ============ FOOTER ============ */
+footer{background:var(--walnut);color:#cdbca4;text-align:center;padding:64px 26px 40px}
+footer .flogo{width:78px;height:78px;border-radius:50%;object-fit:cover;margin:0 auto 16px;border:2px solid var(--brass);background:#2a1d12}
+footer .fname{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#fff;font-size:1.2rem}
+footer .fnav{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin:22px 0;font-family:var(--condensed);text-transform:uppercase;letter-spacing:.13em;font-size:.78rem}
+footer .fnav a{opacity:.85;transition:.25s}
+footer .fnav a:hover{opacity:1;color:var(--brass)}
+footer .fcontact{font-size:.95rem;line-height:1.9}
+footer .fcontact a{color:#eed9b6}
+footer .social{display:flex;gap:14px;justify-content:center;margin:18px 0}
+footer .social a{width:40px;height:40px;border:1px solid rgba(177,120,46,.5);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#eed9b6;transition:.3s}
+footer .social a:hover{background:var(--brass);color:#fff;border-color:var(--brass)}
+footer .copy{margin-top:24px;font-size:.78rem;letter-spacing:.06em;color:#9c8a72;border-top:1px solid rgba(255,255,255,.08);padding-top:20px}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:880px){
+  nav.links{display:none}
+  .menu-btn{display:block}
+  .split{grid-template-columns:1fr;gap:34px}
+  .split.flip .photo{order:-1}
+  .cards{grid-template-columns:1fr;gap:18px}
+  .vet .grid{grid-template-columns:1fr;text-align:center;gap:24px;justify-items:center}
+  .feature{height:auto;padding:60px 0}
+  .fcard{margin:0 22px}
+  .lead,.fcard p{max-width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="hdr">
+  <div class="wrap bar">
+    <a href="#top" class="brand">
+      <img src="images/logo.jpg" alt="Board Grunt LLC logo" onerror="this.style.visibility='hidden'">
+      <span class="name">Board Grunt</span>
+    </a>
+    <nav class="links">
+      <a href="#boards">The Boards</a>
+      <a href="#uses">Uses</a>
+      <a href="#story">Veteran Made</a>
+      <a href="#care">Care</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a href="https://www.facebook.com/profile.php?id=61573572876317" target="_blank" rel="noopener" class="cta-mini">Browse on Facebook</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.links').style.display='flex';this.style.display='none'">☰</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="bg"><img src="images/hero.jpg" alt="Handmade purpleheart, maple and walnut cutting board by Board Grunt" onerror="this.style.display='none'"></div>
+  <div class="scrim"></div>
+  <div class="inner">
+    <div class="logobox"><img src="images/logo.jpg" alt="Board Grunt brand stamp" onerror="this.parentNode.style.display='none'"></div>
+    <div class="script">Hand-Crafted</div>
+    <h1>Cutting Boards</h1>
+    <p class="htag">made to outlast the kitchen &mdash; not last a season.</p>
+    <div class="rule"></div>
+    <div class="btns">
+      <a href="https://www.facebook.com/profile.php?id=61573572876317" target="_blank" rel="noopener" class="btn btn-solid">Browse on Facebook</a>
+      <a href="#inventory" class="btn btn-light">See The Boards</a>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll<span>&darr;</span></div>
+</section>
+
+<!-- ============ SECTION 1 — NO TWO ALIKE ============ -->
+<section class="pad" id="boards">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="tag">Locally sourced hardwoods</p>
+      <span class="eyebrow">No two ever the same</span>
+      <h2 class="display">Built by hand,<br>board by board</h2>
+      <p class="lead">Every Board Grunt piece is cut, glued, and finished by hand from domestic and exotic hardwoods &mdash; walnut, maple, cherry, purpleheart, and more. No stains. No dyes. Just the natural grain, brought out with a food-safe finish. Because a real cutting board should be the last one you ever buy.</p>
+      <p style="margin-top:26px"><a href="#inventory" class="btn">See The Inventory</a></p>
+    </div>
+    <div class="framed photo reveal">
+      <span class="bracket-tr"></span><span class="bracket-bl"></span>
+      <img src="images/board-end-grain.jpg" alt="End-grain checkerboard cutting board in mixed hardwoods" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE CARD ============ -->
+<section class="feature">
+  <div class="bg"><img src="images/board-striped.jpg" alt="Striped edge-grain hardwood serving board" onerror="this.style.display='none'"></div>
+  <div class="fcard reveal">
+    <h3>Safe enough to eat off. Tough enough to take a beating.</h3>
+    <p>Every board ships pre-treated with our proprietary food-safe blend of tung oil, coconut oil, and beeswax. Wash it with soap and water, towel it dry, re-treat now and then with Board Grunt &ldquo;Beauty Wax.&rdquo; Just never the dishwasher &mdash; these are heirlooms, not disposables.</p>
+    <a href="#care" class="btn btn-light">How To Care For It</a>
+  </div>
+</section>
+
+<!-- ============ VETERAN STORY ============ -->
+<section class="pad vet" id="story">
+  <div class="wrap">
+    <div class="grid">
+      <div class="seal reveal"><span><b>68W</b>U.S. Army<br>Combat Medic</span></div>
+      <div class="reveal">
+        <p class="tag" style="color:var(--brass)">Veteran owned &amp; operated</p>
+        <h2 class="display">Made by the Grunt himself</h2>
+        <p class="lead">Board Grunt is built by Lance Swalve &mdash; &ldquo;The Board Grunt.&rdquo; He joined the United States Army in 2009 and still serves in the Illinois National Guard as a Sergeant First Class, 68W combat medic. The same hands that train to put people back together build every board in the shop: carefully, honestly, and to last. Buy a board, support a soldier&apos;s craft.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES OVER WOOD ============ -->
+<section class="cats" id="inventory">
+  <div class="bg"><img src="images/wood-texture.jpg" alt="Board Grunt cutting board inventory on display" onerror="this.style.display='none'"></div>
+  <div class="wrap">
+    <div class="cards">
+      <div class="cardp reveal"><img src="images/board-end-grain.jpg" alt="End-grain checkerboard cutting boards" onerror="this.style.display='none'"><div class="lbl">End-Grain Boards</div></div>
+      <div class="cardp reveal"><img src="images/board-charcuterie.jpg" alt="Edge-grain striped cutting boards" onerror="this.style.display='none'"><div class="lbl">Cutting Boards</div></div>
+      <div class="cardp reveal"><img src="images/board-exotic.jpg" alt="Charcuterie and serving boards" onerror="this.style.display='none'"><div class="lbl">Charcuterie &amp; Serving</div></div>
+    </div>
+    <div class="overhead reveal">
+      <span class="script">Ready to go,</span>
+      <h2>Natural &amp; one&#8209;of&#8209;a&#8209;kind</h2>
+      <p>Each board is built by hand from walnut, maple, cherry, purpleheart and more &mdash; then it&rsquo;s done. No two are ever the same, and when one&rsquo;s gone, it&rsquo;s gone. The full lineup lives on Facebook &mdash; see what&rsquo;s in stock and claim the one that&rsquo;s yours.</p>
+      <p style="margin-top:22px"><a href="https://www.facebook.com/profile.php?id=61573572876317" target="_blank" rel="noopener" class="btn btn-solid">Browse The Inventory On Facebook</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USES ============ -->
+<section class="pad uses" id="uses">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="tag">More than a cutting board</p>
+      <span class="eyebrow">Put it to work</span>
+      <h2 class="display">A board for every table</h2>
+      <p class="lead" style="margin:14px auto 0;max-width:62ch">One handmade hardwood board pulls a dozen different jobs &mdash; from the cutting block to the centerpiece. Here&rsquo;s where a Board Grunt board earns its keep.</p>
+    </div>
+    <div class="ugrid">
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9.5" cy="10" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="9.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="14" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="9" cy="14" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <h4>Charcuterie &amp; Grazing</h4>
+        <p>Cheese, cured meats, olives and crackers. A surface built to be the centerpiece of the whole spread.</p>
+      </div>
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><path d="M3 18 L20 8 L20 18 Z"/><circle cx="11" cy="14.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r=".9" fill="currentColor" stroke="none"/></svg>
+        <h4>Cheese &amp; Bread Boards</h4>
+        <p>Soft brie to sharp cheddar, a warm baguette alongside. Serve it like you mean it.</p>
+      </div>
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6.5"/><path d="M12 7.5c.3-2.6 2-3.8 4.2-3.8 .1 2.2-1.2 3.9-3.4 4.1"/></svg>
+        <h4>Fruit &amp; Veggie Prep</h4>
+        <p>Slice lemons, dice onions, prep the whole meal on a surface that&rsquo;s easy on your knife edge.</p>
+      </div>
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><path d="M12 2.5c2.2 3.6 5.5 5.6 5.5 9.8a5.5 5.5 0 0 1-11 0c0-2.4 1.4-3.6 2.5-5.2 .6 1.6 1.7 2 2.6 2-.9-2.6-.9-4.5.4-6.6Z"/></svg>
+        <h4>Carving &amp; The Grill</h4>
+        <p>Rest a roast, carve the brisket, catch the juices in the groove. Made for grilling season.</p>
+      </div>
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><path d="M6 3v6.5a2 2 0 0 0 4 0V3"/><path d="M8 9.5V21"/><path d="M16.5 3c-1.8 0-3 2.2-3 5s1.2 4 3 4v9"/></svg>
+        <h4>Everyday Kitchen Prep</h4>
+        <p>Tough end-grain and edge-grain boards meant to be used hard, every single day &mdash; not babied in a drawer.</p>
+      </div>
+      <div class="use reveal">
+        <svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11.5" rx="1"/><path d="M3 9h18v3H3z"/><path d="M12 9v11.5"/><path d="M12 9c-3 0-5-1-5-2.8S10 4.7 12 9c2-4.3 5-4 5-2.8S15 9 12 9Z"/></svg>
+        <h4>Gifts That Last</h4>
+        <p>Weddings, housewarmings, groomsmen, retirements. A handmade gift nobody ever throws away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARE ============ -->
+<section class="pad care" id="care">
+  <div class="wrap split flip">
+    <div class="framed photo reveal">
+      <span class="bracket-tr"></span><span class="bracket-bl"></span>
+      <img src="images/board-charcuterie.jpg" alt="Charcuterie board with fresh produce" onerror="this.style.display='none'">
+    </div>
+    <div class="reveal">
+      <p class="tag">Pre-treated, food-safe, easy</p>
+      <span class="eyebrow">Care for your piece</span>
+      <h2 class="display">Treat it right,<br>keep it for life</h2>
+      <ul class="carelist">
+        <li>Pre-treated with a food-safe blend of tung oil, coconut oil &amp; beeswax.</li>
+        <li>Wash by hand with soap and water, then towel dry &mdash; never soak it.</li>
+        <li>Never put your board in the dishwasher.</li>
+        <li>Re-treat now and then with Board Grunt &ldquo;Beauty Wax&rdquo; or any cutting-board finish.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORDER BAND ============ -->
+<section class="order" id="order">
+  <div class="bg"><img src="images/booth.jpg" alt="Board Grunt handmade cutting boards on display at a market" onerror="this.style.display='none'"></div>
+  <div class="wrap">
+    <p class="tag" style="color:var(--brass)">Grilling season is upon us</p>
+    <h2>See what&rsquo;s in stock</h2>
+    <p class="em">&ldquo;Let&rsquo;s cut some meat.&rdquo;</p>
+    <p style="max-width:46ch;margin:0 auto 26px;color:#e3d4bd">The current boards are posted on Facebook. Find the one you want, then message Board Grunt to claim it &mdash; or email an order direct.</p>
+    <div class="btns">
+      <a href="https://www.facebook.com/profile.php?id=61573572876317" target="_blank" rel="noopener" class="btn btn-solid">Browse The Inventory</a>
+      <a href="mailto:orders@boardgrunt.com?subject=Board%20Grunt%20Order" class="btn btn-light">Ask About A Board</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <img class="flogo" src="images/logo.jpg" alt="Board Grunt LLC" onerror="this.style.visibility='hidden'">
+  <div class="fname">Board Grunt LLC</div>
+  <div class="fnav">
+    <a href="#boards">The Boards</a>
+    <a href="#uses">Uses</a>
+    <a href="#story">Veteran Made</a>
+    <a href="#care">Care</a>
+    <a href="#order">Order</a>
+  </div>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=61573572876317" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+    </a>
+    <a href="mailto:orders@boardgrunt.com" aria-label="Email">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+  </div>
+  <div class="fcontact">
+    Handcrafted hardwood boards &middot; Chicago, Illinois<br>
+    <a href="mailto:orders@boardgrunt.com">orders@boardgrunt.com</a>
+  </div>
+  <div class="copy">&copy; 2026 Board Grunt LLC &middot; Veteran owned &amp; operated &middot; Handcrafted in Illinois</div>
+</footer>
+
+<script>
+// sticky header solid-on-scroll
+const hdr=document.getElementById('hdr');
+const onScroll=()=>{hdr.classList.toggle('solid',window.scrollY>60);};
+window.addEventListener('scroll',onScroll);onScroll();
+
+// scroll reveal
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el);});
+</script>
+</body>
+</html>
