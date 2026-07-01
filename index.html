@@ -246,6 +246,23 @@ section{position:relative}
 .tph svg{width:44px;height:44px;opacity:.9;stroke:currentColor;fill:none;stroke-width:1.4;position:relative;z-index:1}
 .tph .soon{font-family:var(--condensed);text-transform:uppercase;letter-spacing:.22em;font-size:.62rem;opacity:.78;position:relative;z-index:1}
 .timg{width:100%;height:210px;object-fit:cover;display:block;filter:saturate(1.03) contrast(1.03)}
+.tcover{position:relative;height:210px;overflow:hidden;background:#2c2012;cursor:pointer}
+.tcover img{width:100%;height:100%;object-fit:cover;transition:.5s;filter:saturate(1.03) contrast(1.03)}
+.tcard:hover .tcover img{transform:scale(1.06)}
+.tcount{position:absolute;top:10px;right:10px;background:rgba(20,12,6,.82);color:#eed9b6;font-family:var(--condensed);text-transform:uppercase;letter-spacing:.12em;font-size:.6rem;padding:5px 9px;border:1px solid rgba(177,120,46,.5)}
+.tview{position:absolute;bottom:0;left:0;right:0;padding:22px 14px 12px;background:linear-gradient(180deg,transparent,rgba(15,9,5,.85));color:#fff;font-family:var(--condensed);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600;opacity:.92;transition:.3s}
+.tcard:hover .tview{opacity:1;padding-bottom:16px}
+.tcard{cursor:pointer}
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(18,11,6,.88);display:none;align-items:flex-start;justify-content:center;padding:5vh 18px;overflow:auto}
+.lightbox.open{display:flex}
+.lb-inner{background:var(--parchment);max-width:920px;width:100%;padding:34px 32px 40px;position:relative;box-shadow:0 34px 90px -20px rgba(0,0,0,.65)}
+.lb-close{position:absolute;top:10px;right:16px;background:none;border:0;font-size:2.1rem;line-height:1;color:var(--ink);cursor:pointer;font-family:var(--serif)}
+.lb-title{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.55rem;color:var(--ink);padding-right:34px;line-height:1.1}
+.lb-sub{font-size:.9rem;color:var(--muted);margin:6px 0 22px}
+.lb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.lb-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#2c2012;border:1px solid var(--cream-line)}
+@media(max-width:640px){.lb-grid{grid-template-columns:repeat(2,1fr)}.lb-inner{padding:28px 18px 32px}}
 .tbody{padding:22px 24px 26px}
 .tcard h4{font-family:var(--display);font-weight:700;font-size:1.24rem;margin-bottom:7px;color:var(--ink)}
 .tcard p{font-size:.95rem;color:#5a4a38;line-height:1.55}
@@ -368,49 +385,49 @@ footer .copy{margin-top:24px;font-size:.78rem;letter-spacing:.06em;color:#9c8a72
     <div class="tgrid">
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of a DOMESTIC hardwood board (images/types/domestic.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="domestic" tabindex="0" role="button" aria-label="View Domestic Hardwoods examples">
+          <img src="images/lib/board-21.jpg" alt="Domestic walnut hardwood board by Board Grunt" loading="lazy">
+          <span class="tcount">5 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>Domestic Hardwoods</h4><p>Maple, walnut, cherry, oak and ash &mdash; classic American hardwoods, milled close to home.</p></div>
       </div>
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of an EXOTIC hardwood board (images/types/exotic.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="exotic" tabindex="0" role="button" aria-label="View Exotic Hardwoods examples">
+          <img src="images/board-exotic.jpg" alt="Exotic purpleheart hardwood board by Board Grunt" loading="lazy">
+          <span class="tcount">5 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>Exotic Hardwoods</h4><p>Purpleheart, padauk, zebrawood and more &mdash; bold color and figure you won&rsquo;t find at a big-box store.</p></div>
       </div>
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of an END-GRAIN board (images/types/end-grain.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="end-grain" tabindex="0" role="button" aria-label="View End-Grain Butcher Block examples">
+          <img src="images/board-end-grain.jpg" alt="End-grain checkerboard butcher block by Board Grunt" loading="lazy">
+          <span class="tcount">4 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>End-Grain Butcher Blocks</h4><p>Squares of end grain stood on end &mdash; the toughest, most knife-friendly build, and it self-heals with use.</p></div>
       </div>
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of an EDGE-GRAIN board (images/types/edge-grain.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="edge-grain" tabindex="0" role="button" aria-label="View Edge-Grain Board examples">
+          <img src="images/board-striped.jpg" alt="Edge-grain striped hardwood board by Board Grunt" loading="lazy">
+          <span class="tcount">5 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>Edge-Grain Boards</h4><p>Classic striped boards from long staves of wood &mdash; light, handsome, and built for everyday prep.</p></div>
       </div>
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of a JUICE-GROOVE board (images/types/juice-groove.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="juice-groove" tabindex="0" role="button" aria-label="View Juice Groove Board examples">
+          <img src="images/lib/board-18.jpg" alt="Juice groove cutting board by Board Grunt" loading="lazy">
+          <span class="tcount">3 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>Juice Groove Boards</h4><p>A hand-carved channel runs the edge to catch the juices when you carve a roast or slice ripe fruit.</p></div>
       </div>
 
       <div class="tcard reveal">
-        <div class="tph"><!-- REPLACE: photo of a SPECIALTY / one-off board (images/types/specialty.jpg) -->
-          <svg viewBox="0 0 24 24"><path d="M6 3h8a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="20" cy="5.5" r="1.4"/></svg>
-          <span class="soon">Photo coming soon</span>
+        <div class="tcover" data-cat="specialty" tabindex="0" role="button" aria-label="View Specialty and One-Off examples">
+          <img src="images/lib/board-17.jpg" alt="Specialty figured-wood board by Board Grunt" loading="lazy">
+          <span class="tcount">4 examples</span><span class="tview">View examples &rarr;</span>
         </div>
         <div class="tbody"><h4>Specialty &amp; One-Offs</h4><p>Paddle boards, live-edge slabs and one-of-a-kind experiments. When it&rsquo;s gone, it&rsquo;s gone.</p></div>
       </div>
@@ -568,6 +585,16 @@ footer .copy{margin-top:24px;font-size:.78rem;letter-spacing:.06em;color:#9c8a72
   <div class="copy">&copy; 2026 Board Grunt LLC &middot; Veteran owned &amp; operated &middot; Handcrafted in Illinois</div>
 </footer>
 
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lb-inner">
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <h3 class="lb-title"></h3>
+    <p class="lb-sub"></p>
+    <div class="lb-grid"></div>
+  </div>
+</div>
+
 <script>
 // sticky header solid-on-scroll
 const hdr=document.getElementById('hdr');
@@ -577,6 +604,22 @@ window.addEventListener('scroll',onScroll);onScroll();
 // scroll reveal
 const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el);});
+
+// board-type lightbox
+const GALLERY={
+ domestic:{t:'Domestic Hardwoods',s:'Maple, walnut, cherry, oak & ash',imgs:['images/lib/board-21.jpg','images/lib/board-23.jpg','images/lib/board-10.jpg','images/lib/board-05.jpg','images/lib/board-08.jpg']},
+ exotic:{t:'Exotic Hardwoods',s:'Purpleheart, padauk, cocobolo & more',imgs:['images/board-exotic.jpg','images/lib/board-22.jpg','images/lib/board-27.jpg','images/lib/board-13.jpg','images/lib/board-20.jpg']},
+ 'end-grain':{t:'End-Grain Butcher Blocks',s:'Checkerboard & brick end-grain builds',imgs:['images/board-end-grain.jpg','images/lib/board-02.jpg','images/lib/board-03.jpg','images/lib/board-09.jpg']},
+ 'edge-grain':{t:'Edge-Grain Boards',s:'Classic striped boards from long staves',imgs:['images/board-striped.jpg','images/lib/board-04.jpg','images/lib/board-15.jpg','images/lib/board-29.jpg','images/lib/board-30.jpg']},
+ 'juice-groove':{t:'Juice Groove Boards',s:'A carved channel to catch the juices',imgs:['images/lib/board-18.jpg','images/lib/board-16.jpg','images/lib/board-31.jpg']},
+ specialty:{t:'Specialty & One-Offs',s:'Figured woods & one-of-a-kind designs',imgs:['images/lib/board-17.jpg','images/lib/board-12.jpg','images/lib/board-28.jpg','images/lib/board-14.jpg']}
+};
+const lb=document.getElementById('lightbox');
+function openLB(cat){const g=GALLERY[cat];if(!g||!lb)return;lb.querySelector('.lb-title').textContent=g.t;lb.querySelector('.lb-sub').textContent=g.s;lb.querySelector('.lb-grid').innerHTML=g.imgs.map(s=>'<img src="'+s+'" loading="lazy" alt="'+g.t+' example board">').join('');lb.classList.add('open');document.body.style.overflow='hidden';}
+function closeLB(){if(lb){lb.classList.remove('open');document.body.style.overflow='';}}
+document.querySelectorAll('.tcover[data-cat]').forEach(c=>{c.addEventListener('click',()=>openLB(c.dataset.cat));c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLB(c.dataset.cat);}});});
+if(lb){lb.addEventListener('click',e=>{if(e.target===lb||e.target.closest('.lb-close'))closeLB();});}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
 </script>
 </body>
 </html>
